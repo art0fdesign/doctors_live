@@ -1,0 +1,14 @@
+.content .middle ul {
+    left: 0px;
+    position: relative;
+    top: 0px;
+}
+
+.content .middle ul li {
+    background: none;
+    display: inline;
+    height: 12px;
+    margin-bottom: 2px;
+    padding:  0;
+    text-indent: 1px;
+}

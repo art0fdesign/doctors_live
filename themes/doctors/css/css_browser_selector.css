@@ -1,0 +1,68 @@
+.ie header .center,
+.ie .header .center {
+	text-align:center;
+}
+.ie banner .center,
+.ie .banner .center{
+	/*text-align:center;*/
+}
+.ie banner_home .textbox4,
+.ie .banner_home .textbox4 {
+	padding-left:15px;
+    width: 295px;
+}
+.safari  .header .social,
+.chrome  .header .social {
+	right:30px;
+}
+.ie .content ul.results li span.board {
+    font-size: 110%;
+    margin-left: 20px;
+    margin-right: -20px;
+    padding: 5px 5px 0 0;
+	clear:both;
+}
+.ie .content ul.results li p:hover, 
+.ie .content ul.results li h4:hover{
+    cursor:pointer;
+}
+
+.ie ul.topmenu ul {
+    text-align:left !important;
+}
+.ie8 .content a img,
+.ie7 .content a img {
+	border:none;
+}
+.ie8 .blue_btn img,
+.ie7 .blue_btn img {
+    display:none;
+}
+.ie .social li:hover {
+	margin:0 2px;
+	padding-bottom:2px;
+}
+.ie .content .social_blog ul li span{
+	bottom:0px;
+}
+.ie8 .wide_content .aboutblock,
+.ie7 .wide_content .aboutblock,
+.ie8 .wide_content .aboutteam,
+.ie7 .wide_content .aboutteam {
+	background:url(../img/bgr_aboutblock.jpg) no-repeat left top;
+}
+.ie8 .content .middleblock,
+.ie7 .content .middleblock {
+	background:url(../img/bgr_aboutblock.jpg) repeat-x left top;
+}
+.ie footer .center,
+.ie .footer .center {
+	text-align:center;
+}
+.ie .content .blog a.submit{
+	top:155px;
+	left:115px;
+}
+.chrome .content ul.results li span.board {
+	margin-right:4px;
+}

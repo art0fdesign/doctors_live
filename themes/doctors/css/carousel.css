@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+.sliderline  {
+	height:135px;
+	width:100%;
+    min-width: 1047px;
+	background-color:#f5f5f5;
+}
+.sliderline  .center {
+	height:135px;
+	padding:0!important;
+	background: url(../img/footer_shadow.png) center top no-repeat;
+}
+
+
+.sliderline_home  {
+	height:105px;
+	width:100%;
+    min-width: 1047px;
+	background-color:#f5f5f5;
+}
+.sliderline_home  .center {
+	height:105px;
+	padding:0!important;
+	background: url(../img/footer_shadow.png) center top no-repeat;
+}
+.sliderline_home #carousel_inner{
+	margin-top:10px;
+}
+
+#carousel_inner {
+	float:left; /* important for inline positioning */
+	width:875px; /* important (this width = width of list item(including margin) * items shown */
+	overflow: hidden;
+	margin:25px 0 0 65px;
+}
+#carousel_ul {
+	position:relative;
+	/*left:8px;  important (this should be negative number of list items width(including margin) */
+	list-style-type: none; /* removing the default styling for unordered list items */
+	margin: 0px;
+	padding: 0px;
+	width:9999px;
+}
+#carousel_ul li{
+	float: left; /* important for inline positioning of the list items */
+	width:155px;  /* fixed width, important */
+	/* just styling bellow*/
+	padding:0px;
+	height:80px;
+	margin:0 10px;
+	text-align: center;
+	opacity: 0.87;
+	display:block;
+}
+#carousel_ul li:hover{
+	opacity: 1;
+}
+.sliderline  a.logo1, .sliderline_home a.logo1,
+.sliderline  a.logo2, .sliderline_home a.logo2,
+.sliderline  a.logo3, .sliderline_home a.logo3,
+.sliderline  a.logo4, .sliderline_home a.logo4,
+.sliderline  a.logo5, .sliderline_home a.logo5 {
+	display:block;
+	height:80px;
+	margin:0;
+	width:155px;
+	background: url(../img/logos1.jpg) left top no-repeat;
+}
+.sliderline  a.logo2, .sliderline_home a.logo2 {
+	background: url(../img/logos2.jpg) left top no-repeat !important;
+}
+.sliderline  a.logo3, .sliderline_home a.logo3 {
+	background: url(../img/logos3.jpg) left top no-repeat !important;
+}
+.sliderline  a.logo4, .sliderline_home a.logo4 {
+	background: url(../img/logos4.jpg) left top no-repeat !important;
+}
+.sliderline  a.logo5, .sliderline_home a.logo5 {
+	background: url(../img/logos5.jpg) left top no-repeat !important;
+}
+
+.sliderline_home #left_scroll,
+.sliderline_home #right_scroll{
+	top:23px;
+}
+#left_scroll, 
+#right_scroll{
+	display:block;
+	position:absolute;
+	top:38px;
+	left:20px;
+	height:60px;
+	width:19px;
+}
+  #right_scroll {
+	left:auto;
+	right:20px !important;
+}
+#left_scroll img, 
+#right_scroll img{
+	border:0; /* remove the default border of linked image */
+	/*styling*/
+	cursor: pointer;
+}

@@ -1,0 +1,61 @@
+﻿.content .middle ul.checklist {
+    border: 1px solid #ccc;
+    list-style: none;
+    height: 20em;
+    overflow: auto;
+    width: 16em;
+    line-height: 19px;
+    
+}
+
+.content .middle ul.checklist li { 
+    background: none;
+    margin: 0; 
+    padding: 0;
+    height: 19px;     
+}
+
+.content .middle ul.checklist label {
+    display: block;
+    padding-left: 40px;
+    text-indent: -25px;
+}
+
+.content .middle ul.checklist label:hover { background: #777; color: #fff; }
+
+.content .middle ul.selectarea {
+	/*border:0px;
+	background-image:url(bgr_text_box.png);
+	background-color:transparent;*/
+	border: 1px solid #999;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:230px;
+	height:156px;
+	position: relative !important;
+    margin: 0;
+    padding:0;
+	top: 0 !important;
+	left: 0 !important;
+}
+.content .middle ul.selectarea.wide {
+    width:540px;
+    height:800px;
+}
+.content .middle ul.selectarea li label {
+    margin: 0;
+    padding:0;
+    display: block;
+    padding-left: 40px;
+    /*text-indent: -30px;*/
+    text-align: left;
+    height: 19px;
+    /*width: 100px;*/
+}
+.content .middle ul.selectarea li .check {
+    margin:0;
+    padding:0;
+    width:auto;
+    left: -35px;
+    height: 19px;
+}
