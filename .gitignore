@@ -4,8 +4,8 @@ vendors/*
 protected/runtime/*
 protected/config/*
 logs/*
-index.php
-index-test.php
+/index.php
+/index-test.php
 *.txt
 error_log
 .DS_Store
