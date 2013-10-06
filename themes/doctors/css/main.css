@@ -2447,9 +2447,23 @@ clear:both;
 	font-size:11px;
 	color:#5f5f5f;
 }
+.content  span.path1 {
+	top:auto;
+	bottom: -10px;
+	left:440px !important;
+	font-size:14px !important;
+	font-weight: bold;
+}
+.content  span.path2 {
+	top:150px !important;
+	bottom: auto !important;
+}
 .content  span.path  a{
 	text-decoration:none;
 	color:#5f5f5f;
+}
+.content  span.path1  a, .content  span.path1  a:hover{
+	color:#ffffff !important;
 }
 .content  span.path  a:hover{
 	color:#d86134;
@@ -2567,6 +2581,7 @@ clear:both;
 	position:absolute;
 	bottom:10px;
 	right:5px;
+	display:none !important;
 }
 
 /* ================================== RATING POPUP ================================= */
@@ -3206,7 +3221,7 @@ ul.social1 li a:hover{
 	color:#005989;
 	font-size:130%;
 	margin:16px 0 0 0;
-	padding:0;
+	padding:0 0 0 12px;
 }
 .helpdesk  {
 	margin-bottom:0 !important;
@@ -3621,7 +3636,7 @@ footer a.submit:hover,
 	width:535px;
 	min-height: 200px;
 	padding:0 15px 0 15px;
-	margin-bottom:10px;
+	margin-bottom:15px;
 	display:block;
 }
 .content .blog p{
@@ -3682,7 +3697,7 @@ footer a.submit:hover,
 	width:100px;
 }
 .content .blog a.submit{
-	margin:5px 0px;
+	margin:10px 0px;
 	padding: 6px 35px 5px 8px !important;
 	position:absolute;
 	top:165px;

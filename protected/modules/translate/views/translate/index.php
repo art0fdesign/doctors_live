@@ -1,7 +1,7 @@
-<?php 
+<?php
     $language=TranslateModule::translator();
-    $languageKey=$language::ID; 
-    
+    $languageKey=$language->ID;
+
     $google=!empty(TranslateModule::translator()->googleApiKey) ? true : false;
 ?>
 <h2><?php echo TranslateModule::t('Translate to {lang}',array('{lang}'=>$language->acceptedLanguages[$language->getLanguage()]));?></h2>

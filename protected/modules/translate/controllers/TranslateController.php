@@ -1,10 +1,10 @@
 <?php
 class TranslateController extends TranslateBaseController{
-	public function init(){
-		Yii::app()->theme = 'cmsnew';
-	}
+    public function init(){
+        Yii::app()->theme = 'cmsnew';
+    }
 
-	public function actionIndex(){
+    public function actionIndex(){
         if(isset($_POST['Message'])){
             foreach($_POST['Message'] as $id=>$message){
                 if(empty($message['translation']))
@@ -19,14 +19,14 @@ class TranslateController extends TranslateBaseController{
         if(($referer=Yii::app()->getRequest()->getUrlReferrer()) && $referer!==$this->createUrl('index'))
             Yii::app()->getUser()->setReturnUrl($referer);
         $translator=TranslateModule::translator();
-        $key=$translator::ID."-missing";
+        $key=$translator->ID."-missing";
         if(isset($_POST[$key]))
             $postMissing=$_POST[$key];
         elseif(Yii::app()->getUser()->hasState($key))
             $postMissing=Yii::app()->getUser()->getState($key);
-        
+
         if(count($postMissing)){
-            Yii::app()->getUser()->setState($key,$postMissing); 
+            Yii::app()->getUser()->setState($key,$postMissing);
             $cont=0;
             foreach($postMissing as $id=>$message){
                 $models[$cont]=new Message;
@@ -37,11 +37,11 @@ class TranslateController extends TranslateBaseController{
             $this->renderText(TranslateModule::t('All messages translated'));
             Yii::app()->end();
         }
-        
+
         $data=array('messages'=>$postMissing,'models'=>$models);
-        
+
         $this->render('index',$data);
-	}
+    }
     function actionSet(){
         $translator=TranslateModule::translator();
         if(Yii::app()->getRequest()->getIsPostRequest()){
@@ -60,5 +60,5 @@ class TranslateController extends TranslateBaseController{
         }else
             throw new CHttpException(400);
     }
-    
+
 }

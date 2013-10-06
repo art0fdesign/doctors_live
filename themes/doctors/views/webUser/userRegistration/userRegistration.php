@@ -124,7 +124,7 @@ $form=$this->beginWidget('CActiveForm', array(
             <dd><input type="checkbox" name="terms" id="terms" class="styled"></dd>
 
             <dt>
-                <label for="terms">I agree to the <a href="#">Terms of Use and Privacy Policy</a>.</label>
+                <label for="terms">I agree to the <a href="#" id="show_terms">Terms of Use and Privacy Policy</a>.</label>
                 <!--<span>Returning User? <a href="#">Login now</a></span>-->
             </dt>
 
@@ -146,3 +146,24 @@ $form=$this->beginWidget('CActiveForm', array(
     </fieldset>
 
 <?php $this->endWidget(); ?>
+
+<script id="terms-script-id" type="text/x-jquery-tmpl">
+    <div id="blanket" style="display:none;"></div>
+    <div id="popUpDiv" style="display:none; min-height:550px; height:auto; background-image:none; padding:25px;">
+       
+        <a class="back" href="#">close</a>
+
+           <h2 class="mb20 blue">Terms of Use and Privacy Policy</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a tortor magna, at elementum elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur sagittis nisl a dui mollis porttitor. Vestibulum velit quam, egestas sed dignissim tempus, egestas nec neque. Mauris non ipsum convallis libero mattis aliquet. Donec pharetra lacinia est ac congue. Pellentesque eros velit, aliquet ac consequat a, mattis sed magna. Aliquam velit metus, aliquet ultrices convallis vel, elementum eu lorem.</p><br class="clear" />
+			<h3>Fusce et elit quam</h3>
+			<p>Fusce libero augue, ultrices ut convallis et, rutrum vitae ligula. Fusce in malesuada risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam tortor arcu, auctor quis ornare at, pharetra vel quam. Sed et tortor at lacus lobortis scelerisque sit amet a massa. Aenean odio felis, accumsan dapibus imperdiet placerat, rutrum vel purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris ut massa nec nisi rutrum eleifend sit amet quis felis.</p><br class="clear" />
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<p>In tempus dolor sed massa porttitor posuere. Integer eleifend elementum odio, sed pulvinar nibh volutpat in. Phasellus in metus in ante dignissim egestas vel et tellus. Vestibulum dapibus vulputate enim a hendrerit. Nunc porta gravida nisl vel hendrerit. Sed vel risus vitae orci ornare congue. Nunc eget nisi sit amet libero porttitor egestas. Donec massa risus, consequat eu sodales eu, tristique ac urna.</p><br class="clear" />
+			<h3>Fusce et elit quam</h3>
+			<p>Fusce et elit quam. Aenean non est at diam pretium lobortis ac non augue. Donec tempor est quis neque tincidunt volutpat. Nullam suscipit odio a odio ultricies vel luctus erat molestie. Quisque eget diam ut quam facilisis imperdiet. In quis felis sit amet libero pulvinar posuere. Nullam viverra dui vitae urna sodales molestie. Etiam enim diam, luctus vitae vulputate eget, consectetur eu libero. In laoreet imperdiet rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas hendrerit, ligula at ornare volutpat, risus augue hendrerit sem, tempor ultrices arcu dui eu mauris. Proin dignissim porta odio, sit amet blandit mauris bibendum id. Pellentesque quis leo vel augue posuere rutrum. Ut diam urna, congue sit amet vulputate sit amet, venenatis auctor est. Nam commodo tristique accumsan. </p><br class="clear" />
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<p>In tempus dolor sed massa porttitor posuere. Integer eleifend elementum odio, sed pulvinar nibh volutpat in. Phasellus in metus in ante dignissim egestas vel et tellus. Vestibulum dapibus vulputate enim a hendrerit. Nunc porta gravida nisl vel hendrerit. Sed vel risus vitae orci ornare congue. Nunc eget nisi sit amet libero porttitor egestas. Donec massa risus, consequat eu sodales eu, tristique ac urna.</p><br class="clear" />
+
+    </div>
+</script>
+

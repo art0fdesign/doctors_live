@@ -8,9 +8,9 @@ $starsWidgetAlias = 'ext.doctors.doctorRatingStars.DoctorRatingStarsWidget';
 <?php //Yii::app()->end(); ?>
 <?php //MyFunctions::echoArray(Yii::app()->webuser->isGuest); ?>
 <?php if( !Yii::app()->webuser->isGuest && !empty($newRatingPopupHTML) && intval(@$summary['doctorID']) != Yii::app()->webuser->id ):?>
-<span class="path" style="left: 490px;"><a href="#" class="new_rating_link">Rate this doctor</a></span>
+<span class="path path1<?php echo count($models)? '': ' path2'; ?>"><a href="#" class="new_rating_link blue_btn">Rate this doctor</a></span>
 <?php else:?>
-<span class="path" style="left: 490px;"><a href="#" class="new_rating_login">Rate this doctor</a></span>
+<span class="path path1<?php echo count($models)? '': ' path2'; ?>"><a href="#" class="new_rating_login blue_btn">Rate this doctor</a></span>
 <?php endif; ?>
 
 <?php if( $saved ): /** after saving rate display info */?>

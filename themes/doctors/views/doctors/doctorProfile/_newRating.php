@@ -9,12 +9,12 @@ $categories = $model->getSurveyCategories( $surveyUserRatingID );
     <form id="new_rating_form" method="post">
         <div class="rating_wrapper">
 
-		<!-- OVERALL INFO DIV -->
-			<div class="rating_overall">
-				<span>Patient Ratings &amp; Comments</span>
-				<!--<a href="" class="rating_link_complete float_right percent"> Complete </a>-->
-				<span class="float_right percent"><?php echo $confidenceFactor? round($confidenceFactor).'%': '&nbsp;'?></span>
-				<div class="float_right" class="slider_overall">
+        <!-- OVERALL INFO DIV -->
+            <div class="rating_overall">
+                <span>Patient Ratings &amp; Comments</span>
+                <!--<a href="" class="rating_link_complete float_right percent"> Complete </a>-->
+                <span class="float_right percent"><?php echo $confidenceFactor? round($confidenceFactor).'%': '&nbsp;'?></span>
+                <div class="float_right" class="slider_overall">
                     <input name="Rating[value]" type="radio" class="star_overall required" value="1" disabled="disabled"<?php if( round($ratingScore * 2) == 1 ) echo ' checked="checked"' ?> />
                     <input name="Rating[value]" type="radio" class="star_overall required" value="2" disabled="disabled"<?php if( round($ratingScore * 2) == 2 ) echo ' checked="checked"' ?> />
                     <input name="Rating[value]" type="radio" class="star_overall required" value="3" disabled="disabled"<?php if( round($ratingScore * 2) == 3 ) echo ' checked="checked"' ?> />
@@ -27,16 +27,16 @@ $categories = $model->getSurveyCategories( $surveyUserRatingID );
                     <input name="Rating[value]" type="radio" class="star_overall required" value="10" disabled="disabled"<?php if( round($ratingScore * 2) == 10 ) echo ' checked="checked"' ?> />
                 </div>
                 <input name="Rating[conf_factor]" type="hidden" class="conf_factor" value="<?php echo $confidenceFactor?>" />
-			</div>
+            </div>
 
 <?php foreach( $categories as $category ):?>
             <!-- category -->
             <div class="rating_item">
-            
+
                 <p class="float_left" style="width:50%;"><?php echo $category['title']?></p>
                 <a href="#" class="float_right percent ml5 ratingCategoryButton">More</a>
                 <span class="float_right percent ml5"><?php echo (int)@$category['Complete_Percent']? round($category['Complete_Percent']).'%': '&nbsp;'?></span>
-                
+
                 <div id="cat_<?php echo $category['id'] ?>" class="float_right ml5 slider_cat">
                     <input name="Rating[category][<?php echo $category['id']?>][value]" type="radio" class="star_cat required" value="1"<?php if( round( @$category['Public_Rating_Score'] * 2 ) == 1 ) echo ' checked="checked"'?> />
                     <input name="Rating[category][<?php echo $category['id']?>][value]" type="radio" class="star_cat" value="2"<?php if( round( @$category['Public_Rating_Score'] * 2 ) == 2 ) echo ' checked="checked"'?> />
@@ -62,28 +62,33 @@ $categories = $model->getSurveyCategories( $surveyUserRatingID );
                     <div class="float_right stars mt15 mb10">
                         <textarea name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" class="textarea" placeholder="Please provide detailed comments..."><?php echo @$question['Answer_Text']?></textarea>
                     </div><br class="clear"/>
-        			</div>
+                    </div>
 <?php else: // stars?>
                     <div class="line">
-        			<h4><?php echo $question['Question']?></h4>
+                    <h4><?php echo $question['Question']?></h4>
                         <div class="stars">
-                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item required" value="1" data-cat="cat_<?php echo $category['id'] ?>"<?php if( (int)@$question['Answer_Score'] == 1 ) echo ' checked="checked"' ?> />
-                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="2" data-cat="cat_<?php echo $category['id'] ?>"<?php if( (int)@$question['Answer_Score'] == 2 ) echo ' checked="checked"' ?> />
-                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="3" data-cat="cat_<?php echo $category['id'] ?>"<?php if( (int)@$question['Answer_Score'] == 3 ) echo ' checked="checked"' ?> />
-                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="4" data-cat="cat_<?php echo $category['id'] ?>"<?php if( (int)@$question['Answer_Score'] == 4 ) echo ' checked="checked"' ?> />
-                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="5" data-cat="cat_<?php echo $category['id'] ?>"<?php if( (int)@$question['Answer_Score'] == 5 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item required" value="1" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 1 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="2" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 2 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="3" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 3 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="4" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 4 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="5" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 5 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="6" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 6 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="7" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 7 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="8" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 8 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="9" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 9 ) echo ' checked="checked"' ?> />
+                            <input name="Rating[category][<?php echo $category['id']?>][items][<?php echo $question['id']?>]" type="radio" class="star_item" value="10" data-cat="cat_<?php echo $category['id'] ?>"<?php if( round(@$question['Answer_Score'] * 2) == 10 ) echo ' checked="checked"' ?> />
                         </div>
-        			</div>
+                    </div>
 <?php endif;?>
 
 <?php endforeach; // question ?>
                 </div><!-- End of questions -->
-            
-            </div><!-- End of category -->    
-        
+
+            </div><!-- End of category -->
+
 
 <?php endforeach; // category ?>
-		</div>
+        </div>
 
         <div class="rating_testimonial" style="display:none">
             <p>Please insert Testimonial...</p>

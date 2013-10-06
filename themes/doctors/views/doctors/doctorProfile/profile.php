@@ -98,7 +98,7 @@ $claimURL .= '/'.$model->id.'/'.MyFunctions::parseForSEO($model->fullName);
         </div>
 
 <?php if ($summary['displayReview']): ?>
-        <a href="<?php echo $ratingBaseUrl.'/rating'; ?>" class="blue_btn submit">Rate this doctor</a><br/>
+        <a href="<?php echo $ratingBaseUrl.'/rating'; ?>" class="blue_btn submit">See Ratings</a><br/>
 <?php endif; ?>
     
     

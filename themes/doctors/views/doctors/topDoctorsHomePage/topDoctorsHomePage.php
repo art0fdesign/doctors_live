@@ -8,7 +8,7 @@
 <div class="textblock_left widget">
     <h2><a href="#">TOP DOCTORS <span>OF THE MONTH </span><span style="text-transform: none">(<?php echo date('F Y'); ?>)</span></a></h2>
     <div class="doctorsPic">
-        <?php foreach($doctors as $item): ?>
+        <?php foreach((array)$doctors as $item): ?>
         <a href="<?php echo $reviewBaseUrl . $item->id . '/' . MyFunctions::parseForSEO($item->getFullName()); ?>">
             <?php if(!$item->getThumbSrc('desk'))
                 $img = Yii::app()->baseUrl . '/themes/doctors/img/bgr_picframe.jpg';

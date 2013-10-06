@@ -56,7 +56,7 @@
         var affiliation = parseInt( $('div.affiliation').css('height') );
         //
         var advertisement  = content - 90;
-        if( ! isNaN( helpdesk ) ) advertisement -= helpdesk + 30;        
+        if( ! isNaN( helpdesk ) ) advertisement -= helpdesk + 30;
         if( ! isNaN( affiliation ) ) advertisement -= affiliation + 35;
         //
         $('div.red_menu:not([fixed])').css('min-height', ( content - 90 ) + 'px');

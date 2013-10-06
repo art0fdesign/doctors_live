@@ -1,76 +1,189 @@
-<?php //0046a
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-HR+cPyxDW5kgcNcSfmKLU1znmTbkvX6Zycy47gcipMrstc4Ylt03YHI7bQQiUTIJWogcHrCAPHxQ
-u9d67NLpuspYeKe71IoEl/kLm44GM1OvBc8rh+Yz1Iwwwl0JJpYBh2YCY+9MuMmYGs6LJ4etD87p
-A19OtJLCG2oNeb8+mNOQZVBCjmmuRtyiiIoaE/jrqEGEAOibGkcJzxilxF2DgPhSw7uDi0OhsgoS
-hwY8gM7FvvHMuzmgaPv/hcXlH7m3PU8tUKHbNAdmGOvWmFOLOT8bmgaVs1DChzn/iJvNLsKD2hCF
-dXpJreQDtmEtzcNgE3xFvuvQK7DhMoQVYtHJOecosO3+hGETXBLn1vkrqAxotRNNjRSrNsgQIpk+
-OOPf0UffPKWBoRTroBsuATbHyFHWzMFV8XizB8FjWVSd5i7PXxDHOmjWhNKXGIAF0nJ/Cknc6b+a
-1hHyQhUEX5bculTno5eYuGkQXmrCkMMZ6/9fmfBuN8eSE/owrsiqQDeUcHXuNzqcEkCcm7HULv/0
-3qrX0lnUR8e+LzhqN6uH5te0Y7h8EDHxV/dfksZgc0GGLaKQzwhnQHv4IpR9nO/pWF8PIZD7388n
-t18UnXJtaDo4+aA7yPL9cnYNiCLmptx/ARnMBucEEqUOnhn0FW/PmV7wMD7msiAlHK+20uv8zTMe
-vj9KJeJ9gxbt0y/THEi1bC/3UXGddRGYW9YHc+A4HRcCrN7ziuuTdFvYdQiMGB9QREBcNU0i7TIe
-g1ECDj7O2GqMC8URsE6QisPMhGaMl41aqks4IuD8aHqNsRGamMzP70lNB2BYxD9lZSdY609lsfEZ
-DHAwe25PHKTmc0gZ8nejtteh/SudodfdEOGzv1IAhgjUo2cb9FP86Y6+KpzbpyyIhPENVz+j1a10
-5s9BpStzneCDrOKb9s/CGKMnFkwbm5bhTDvO9kUMpqk1YiKluTJHnGUyfnmSYai5fj5vKFzGrDIZ
-5quKYNeN4EN59USDSFbbXUTH2ZeumD7pEC+i1PJ+9B1RZ+QEG+Fhye1IrpseHZqo3cX9cZy3DI8W
-CHIO5KjaW7qPz8KIylh+5jW8IIW+DY/Ug2Ee27BnZ6+41Dr3jSMFOzSmsUL/LeqX3GqM96c8lJ7p
-uClDvomv/dAiVowKdBS/pYz/D5z6f/CKmbG80o0snxWAB0rsWRtF9+eL7EQmSNhoxCPa+jg0zAwc
-o3CSaFjcR61ukRB/WQyEwztp30knHlMFCMaTzhIsM421oP3D2qitAYLtcTgjg5YrS9af5ycarott
-ml1Ybr6ycgYxWsBZsWTM8Moqbcj5+9CF/vDqzUmWln+FH3jMhE9nSTmVHG0vKyAxTe5RLybYSGFS
-ZTAaU//AW5MhUA/yrvmNmlbWzz2iyAbfveEKH5IN1QZp3isrH5bRUZ1xwXBY8RN1iWvWCD9jKjRA
-M9Er2jJMhLrpAO5c7PFJKAvMkKtG54XNEx5OHBoAeIedot3TElUUgAh3xZOKDamEaBfXfqhb18YS
-38rYA29nCTE7CLZZyHhVAF0Aky6XjDDu5tL10sddXq577JMb4Zxzdqje8pQ7uFYAJ1EkUM3BZ4CF
-TTKEchw9iKZ+8+YDlp/s1D78hTIZbXu3N44eTxmEtXrnMDM+QFttWABqG9rpmHJYX/hSL53SkihI
-suzjmVLKy4sgZaWxsFSc6WKumm+L2m8IM/0iL1oCsNaADiYA+H1EzE1iCSFOG1qmwfPTf039CuNi
-jtYMyigG+gzUHrMqFZstbMlKnEygm/Ce+Yd9Ea6XH9UQLJ9fJb3mEI7BT1xqjpwngC6sqJYnmOgk
-vLerEis/J0ME7k8rccGmHaTVk7qZ4KqcmOBvRPHmNd27+JwVEwDRkbtXDNUpnqApOtoIsIGKPQb5
-d1fwOdZApexYjuMRLcYbqNyTyYq1uN+bPrSv7pI7YAyP55AV8Yv0aJjHaax1Cv34FWph4vrKekXi
-FlTkubIUaqmL0dM2d4lMttXWu+JkhI/mqWWdz1F10F+AgwufM+cPFS8PSKf9GowsZoOu5EFrptfM
-fjqNOl9+2uWqz/AeML+BotffDh+1iXNQHyaTpXUTpGWrdQMpuvwpU6nb5iYP3rcjKTkG+MJC47LU
-WSgoPm1AiJTLCZDP45SxIhZhe1a+M9KLVxbP6TLaFGAUqQrBtvtmLbYRaYPfxGQsUeNBlWbmQQKZ
-IIoxpAfl0lBoiaymOW3LoAMJOuc5uHuimli7kdg+lBPReTqqQIfmg5nUBF9tq40aIZGYh3xH8pWb
-dc9nEPzFw1HmLikofwDlSS5fV1dx4wtVH03J5wdZvUKi3n2RyOi71bVjPtInXWIkv2lWNoywXzjc
-PcvElPt5syhqfiII0sD0G5Qiwka4B2WHQWtQKe0m7SP63V/vbcf8YNXbiVyKHwzMgOw6H4cCVg4P
-vbGiVI/bMeDPSUxrYJWi45UHWU3n+TGQiTIQv2Z//OhdHT1HZXLxuM++d2rk7P+H7BYqxU6+Kj71
-AUjQtISCY6MDqKtDVvwnwZfBPjACG8D+mN/CCxiFuOP0qrLdU8XyndmCdE95J0HeIHvOMiv0e7/c
-l7LoUyxFy+22MI6j5tfQDzpSiZuMzuu4Ca70t2bn6WBERZfWNf3db6HeGagI0Iolrjk1iKXZW/7c
-HYSV313h2V2kToqkLgxcmLUEM1ZmCqHEUX+zl7HrlMtrCKLhfUxqLBOdtn6wW1vZ0R+350ZsUCDw
-6EDIgpbVrwFg6BC0U1Gbhr7Fg5ox+8xLSEFlxxTXo+D1VUQXOYT7msy6uxfpyI8TcsAI++8873YX
-g9jMznqSH6kJjrTEPcJ+9stCGxoy5gh1mV0IP125zoQJmmCw9NDO59WoXZ+27fNNqt2QL2ZpAvkA
-4Ufz0/up2GATwEgPDy6wQOtJ25j9DFg+4RdYu/rNXdtnilQB10EviZklbm4g2wpjb4Qi/bheAUHi
-2qooNVonX37S2k0fp7WOED/92WkT4qlJw3dJgapWkI8ivmPy7n4MeIG1D7pZhMAfPhUtDSqUQSSM
-06N4K9fH7pYAKHG3G2pFu48PJLVYAtqlu0s29fBTgv7ODRHRo6kZsAmi86TIF+GstWw2MCxZzyFA
-2Xmg6SP9Nn45Hwc7VDovLmJHQmjsh6E9I4JVPhQ7+MbHb4QOpTzuwadrGyPEqdb6U/eT75q0jXo2
-mlq5D2h0n+fYjxsuM9LY5Y1+6wQ8gGVAbFvcD6d4u/QQP6OCetA8YNBzgQVDgEg2YP+0blOiA1Ss
-VUm2xcpmQI153LId9QlJk/GHEKPfb4AY5bCPcS9C5cs73J3fj1VmMxSxRh+LhqyrmAK/1JrE1gPN
-bD/In2OlGqXSwgjGo6x0hXpJl9TSpgSlFrygHJTq2AVLt0nHNEp7twKGlGexNljYMSD8Bqt/HcZr
-Ulq3jDpgnzsNcQndt9w+YqEQ5/JxZlubZv+JLkOBj1po0+nMkU9is4bPjtrNnzTbB2ZF5BjajD68
-ZZFGJ22knet1W6lZc7FHCN3uXnTMyGRuCBERU2gWl1t3wq3ks9utTsG74rBJtxQIR0vmrwBxU6Nk
-qb3qWPeXL2iYP9KI2UgiM/BpX+3z+XW6aFIyJGkMEIy+i6aKp0tqCGntKWE5bceFMCH2JOEIM2cs
-z9VyfrixNPG/njOfOYGQ2ker3koK/KAgQiXu6lLMmdCjzUvECiKIg0h6Js1lQaou/LBg1G/d/yuj
-B3BgfzYegxqk6IY1EY8PHy0OSrZ/2/V+qWkArBWty1gPI41quHwouFmGm7hFMuvDvsdwUSKLvcgk
-yBQ4PIg/6f599zA14mRroSnktn7S9UgRAP4aM0qUEYQrTe9/kITSsjiVAvu9Dn9DYJe6oDaqW3Wi
-/wbcQEQlmcZeO1lZEVhD5FwsVHlm7KppSEoLMC1W6M5eimQNHSL4lVDcS4rjCiv1v27iVvbIlCn/
-qwoPwuMpUSbx14qR7uiI1Abd+k+g61lteC0oWARNCNvDEg0Vb8QQHrqnHOf5yWw92B6a9PDP+PIJ
-eX5gcQktjxxFQCLxf04TldGKac8BW6dvPqQ25M+dKDGvDYXHsO/TP6bVLIgchia/5/z8VNNexzb/
-Q9BLVFGfAOZhNHEMl+ZU8dutWKyL3n/um1evROPC3TSemIX0u3Pi+pXkecqXmwfQGF2Ce/Z1cyXl
-dgKUtlQMMIFpf76HAD8PKlpCg8aLOegZCtRo5iKCyMKffSJXtugj8fz8Lq9EnWVtowZd5pNTPpWI
-yPwglBv42mbguMd0DXYtpEhi2TtSqbGRmyFtcXYbBw+exouvXjkgflauO/kqnv7wNVWcyGab1Kyw
-K4xi9IKLmkDr7RVKnUa1bO11g5CY5s9u42uhshHHoq9CO8+W6rjIZaEQAd1tVXwY/Fpzp1pY1O0Z
-ZSBsiPhGdYtqt6t/djOLdARFXBe9dv03/NKcaQQNPMd/nnDZHurEy6qCFjTFiN+IpkW1wqHxVrrr
-T7rb89RsadOBAzTUkHL9vgQepFN/M60t8AHkzVX91waAd1gwGS8eWs1HzWCfPQS+OPe8h0rY1+Py
-gmhrR7fesu5FTyWAeYQPZl68hoIqqOkwkAPdPJT2FaR6IX89slL4jx2v1E97HRiguSBbnH18oJRV
-0pi9mHjVqcfXRubvBbyo6koks3+cQ/kX/0m69F3r+vgRUEEEKsv+vI4UzbWF+dAd/97BvzGxD2DO
-oOymYdeUilcsAXpnWD8qSPkeeX36PB8EGbO8FXJHlIiLO8U2OvmsUGhmp54xc+oYRkFyC1B/hOAO
-ytp3YeVTz9jKRryTI8XS0nfyYPhLqjS5PWTAjKqFjgEh7wqnZvdUW6+bjPJmzHgak0U/8I3Q9BEu
-h1adS7n+0k3OVoeJPr+jW7f+7dSi0ng2wlBXvqmVO7ZysNua9oeXtA7c/Eznx9x9Qf706tmpV4JH
-V+xdeK0fSYLrH8nd+ah2TzPrV/mHJKEBtmQpb+qw16QUUqkPie5Okk1vrOpBPVLj5y4RSYVBdc6B
-K7UzhiaemD60NArQ3C5rusdHpRjqwyE7uE0OEvfIXmjRu0n5A478fQ2VhepOyHQL4fyTqVxIg4iO
-MmSYFpwJI9Ts07VV4AoLCPDdigqPOHLJ3V+EA5C/ZV1Wqqc4tUU1hJBzoxQGrvpVVlT1GuJK5ReC
-JthxetVVpBdCEhO/sEFOWIy0QqiLE4U1QHXc49TfqYHzuEKbWo7qAvg9HvsCUQF4cD5+NCdMyocQ
-atoX8ukMYFvos3zYX4q6JV6wfewy06hDjzQ2s3TEDPpnWQXfubLLKPYZhidfL07KDZQvqJTZzrWH
-UuHvJGlJnln79UMbX0+8cVFYwD4tRum68/yGvzvImapdgZ0bit2MunqCva/mORPO7DkUQHgIwlEo
-zw7cUxegVm0E32eofXgo+g4ai9PzkZPN5plVthZkFOhFXc0kkIMb5HvrTHTtVCVq/df/4mzX7MDR
-zolKhjPvI/0RpuEmKblB010n4/1T6wEzsCHoe6cR85a=
+<?php
+
+/**
+ * This is the model class for table "vw_search".
+ *
+ * The followings are the available columns in table 'vw_search':
+ * @property string $id
+ * @property string $module
+ * @property string $title
+ * @property string $title_seo
+ * @property string $html
+ * @property string $changed_dt
+ *
+ * The followings are the available model relations:
+ * @property User $creator
+ * @property User $editor
+ */
+class WebSearch extends CmsActiveRecord
+{
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
+	 * @return WebSearch the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return 'vw_search';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('id', 'length', 'max'=>11),
+			array('module', 'length', 'max'=>20),
+			array('html, changed_dt', 'safe'),
+			// The following rule is used by search().            
+			// Please remove those attributes that should not be searched.
+            // Uncomment if needed
+			//array('id, module, html, changed_dt', 'safe', 'on'=>'search'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+			//'creator' => array(self::BELONGS_TO, 'User', 'created_id'),
+			//'editor' => array(self::BELONGS_TO, 'User', 'changed_id'),
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'id' => 'ID',
+			'module' => 'Module',
+			'title' => 'Title',
+			'title_seo' => 'Title',
+			'html' => 'Html',
+			'changed_dt' => 'Changed Time',
+		);
+	}
+    
+    /**
+     * Override cms function because there is no created->changed fields in table
+     */
+    // uncomment this line if validation is needed 
+    protected function beforeValidate()
+    {
+        return true;
+    }/**/
+
+    /**
+     * Retrieves a list of models 
+     * Simulates model()->findAll function w/o parameters
+     * @param String $orderBY Attribute name to sort by
+     * @param Array $filters Attributes to filter by
+     *  - $filters can include order, limit, offset parameters
+     * @param Bool $showDeleted Show/Hide deleted records
+     * @return Array all models that meet params
+     */
+    public static function retrieveAll( $orderBy = '', $filters = array(), $showDeleted = false )
+    {
+        return parent::retrieveAllByModel( __CLASS__, $filters, $orderBy, $showDeleted );
+    }
+    
+    /**
+     * Retrieve searched item's link
+     * moved here to relax view file
+     * @param $baseUrl String outter formatted base url
+     * @return String href tag for anchor in displaying of item
+     */
+    public function getTitleHRef($baseUrl)
+    {
+        $ret = $baseUrl;
+        switch ($this->module){
+            case 'ourteam': $ret .= '#' . $this->title_seo; break; 
+            case 'services':
+                //MyFunctions::echoArray( $this->id );
+                $catSeo =  ListingItem::model()->findByPk( $this->id )->listingCategory->cat_seo;
+                $ret .= '/' . $catSeo . '/' . $this->title_seo; break;
+            case 'research': break;
+            default: $ret .= '/' . $this->title_seo;
+        }
+        return $ret;
+    }
+    
+    /**
+     * Retrieve content to display
+     * Function for displaying searched terms in content
+     * @param $search Array tags to search for
+     * @param $length Integer Max length of returned content
+     * @return String Html content
+     */
+    public function prepareItemContent( $search, $length = 200 )
+    {        
+        $arr = array();
+        //
+        $stripped = strip_tags($this->html);        
+        $stripped = str_replace( array("\r\n", "\n", "\r"), ' ', $stripped );
+        $part = substr( $stripped, 0, $length );
+        if( count($search) ){ // if not empty search needle array
+            foreach( $search as $needle ){
+                //$needle = 'atm';
+                $pos = stripos( $stripped, $needle );
+                if( $pos !== false ){ // finded
+                    if( $pos != 0 ){ // not in a beggining
+                        // insert b tag around needle
+                        $prepared = substr( $stripped, 0, $pos ) . '<b>';
+                        $prepared .= substr( $stripped, $pos, strlen($needle) ) . '</b>';
+                        $prepared .= substr( $stripped, $pos + strlen($needle) ); 
+                        // find first space before needle
+                        $beforeContent = substr( $prepared, 0, $pos-1 ); 
+                        $spacePosition = strrpos( $beforeContent, ' ' );
+                        // return part from left space to $length length
+                        $part = substr( $prepared, $spacePosition+1, $length);
+                        
+                    } // if( $pos != 0 ) 
+                    // add this part to array
+                    $arr[] = $part;
+                } // if( $pos !== false )
+            } // foreach( $needle )
+        } else { // there is empty search array... retrieve all
+            $arr[] = $part;
+        }
+        //MyFunctions::echoArray( array('count'=>count($search)), $arr );
+        // $arr ia array of $length length of stripped part 
+        // implode them with equal parts of needles
+        $ret = '';
+        $len = $length;
+        if( count( $arr ) ) $len = $length/count($arr) - 4; // leave room for '... '
+        // do implode
+        foreach( $arr as $elem ){
+            $subElem = substr( $elem, 0, $len ); 
+            $rightSpacePos = strrpos( $subElem, ' ' );
+            $ret .= substr( $subElem, 0, $rightSpacePos ) . '... ';
+        }
+        /*MyFunctions::echoArray( array( 
+            'needle'=>$needle, 
+            'pos'=>$pos, 
+            'space'=>$spacePosition, 
+            //'prepared'=>$prepared, 
+            'part'=>$part,
+            'return' => $ret,
+        ), array( 'stripped'=>$stripped, ), $this->html );/**/
+        return $ret;
+    }
+    
+}

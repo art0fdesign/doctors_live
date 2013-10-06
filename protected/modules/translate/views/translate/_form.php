@@ -1,7 +1,7 @@
 <?php
 
 $translator=TranslateModule::translator();
-$languageKey=$translator::ID;
+$languageKey=$translator->ID;
 $id=$data->id;
 $message=$messages[$id];
 

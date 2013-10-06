@@ -132,3 +132,25 @@
         </div>
     </script>
 <?php endif; ?>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+    jQuery(document).on('click', '#show_terms', function(){
+        // alert('Click'); return false;
+        /* Clean up DOM */
+        jQuery('#blanket').remove();
+        jQuery('#popUpDiv').remove();
+
+        /* append to body */
+        jQuery('#terms-script-id').tmpl().appendTo('body');
+
+        /* Popup data */
+        popup('popUpDiv');
+        jQuery("html, body").animate({ scrollTop: jQuery('#popUpDiv').offset().top - 30 }, "slow");
+
+        return false;
+    });
+});
+/*]]>*/
+</script>

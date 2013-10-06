@@ -66,3 +66,12 @@
 .chrome .content ul.results li span.board {
 	margin-right:4px;
 }
+.win.gecko .content .halftitle .rating_overall, .opera .content .halftitle .rating_overall  {
+    margin-left:-80px !important;
+}
+.chrome .content .halftitle .rating_overall {
+    margin-left:-30px !important;
+}
+.safari .content .halftitle .rating_overall {
+    display: none !important;
+}

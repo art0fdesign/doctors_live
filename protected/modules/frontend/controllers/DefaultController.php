@@ -2,7 +2,7 @@
 
 class DefaultController extends CController
 {
-    // name of public directory for storing css, scripts, template images etc. 
+    // name of public directory for storing css, scripts, template images etc.
     public $publicPath = 'frontend';
     //
     public $pageTitle = '';
@@ -10,13 +10,13 @@ class DefaultController extends CController
     public $pageID = 0;
     public $blocks = array();
     public $lang = 'en';
-    
+
     // cache thumb url path
     public $_thumbUrl = null;
-    
+
     protected $_theme = null;
 
-   
+
     public function actions()
     {
         return array(
@@ -27,7 +27,7 @@ class DefaultController extends CController
                 'testLimit'=>1,
             ),
         );
-    }    
+    }
     /**
      * @return array action filters
      */
@@ -37,18 +37,21 @@ class DefaultController extends CController
         Yii::app()->theme = $this->_theme;
         return true;
     }
-    
-	/**
-	 * This is the default 'index' action that is invoked
-	 * when an action is not explicitly requested by users.
-	 */
+
+    /**
+     * @return Boolean is host is localhost or live one
+     */
+    public function isLive()
+    {
+        return $_SERVER['SERVER_ADDR'] != '127.0.0.1' && $_SERVER['SERVER_ADDR'] != '::1';
+    }
+
+    /**
+     * This is the default 'index' action that is invoked
+     * when an action is not explicitly requested by users.
+     */
     public function actionIndex($par=null, $par2=null, $par3=null, $par4=null, $par5=null, $par6=null, $par7=null, $par8=null, $par9=null, $par10=null)
     {
-        // if (isset($_GET)) {
-            // $auth = Yii::app()->webuser->login();
-            // MyFunctions::echoArray($_GET, $auth, array('isGuest'=>Yii::app()->webuser->isGuest));
-        // }
-        // echo 'isGuest: '.Yii::app()->webuser->isGuest.', uname: '.Yii::app()->webuser->model->fullName."<br />";
         //$this->actionError(); Yii::app()->end();
         // Resolve url parameters...
         $this->pars[0] = !empty($par)? $par: '';
@@ -61,51 +64,49 @@ class DefaultController extends CController
         $this->pars[7] = !empty($par8)? $par8: '';
         $this->pars[8] = !empty($par9)? $par9: '';
         $this->pars[9] = !empty($par10)? $par10: '';
-        // define frontend theme
-        //$test = MyFunctions::parseForSEO('moje Ime neko bezveze');
-        // MyFunctions::echoArray( $_SERVER );
-        // phpinfo();
-        // MyFunctions::echoArray( $this->pars );
-        //$test = floatval(str_replace( ',', '.', ',12'))+10;
-        /*
-        // /home/art0fdes/public_html/subdomain/doctors
-        $p = Yii::getPathOfAlias( 'webroot.upload.doctors.profile.thumb' );
-        $p1 = Yii::getPathOfAlias( 'webroot' );
-        $p2 = Yii::app()->request->getBaseUrl();
-        $p3 = Yii::app()->request->getHostInfo();
-        MyFunctions::echoArray( array( $p, $p1, $p2, $p3 ), $_SERVER );
-        /**/
-        //print_r($this->pars);die;
-        // $theme = Yii::app()->params['theme_frontend'];
+        //
+        if ($par == 'process' && empty($_SERVER['HTTPS']) && $this->isLive()) {
+            if (empty($_SERVER['REQUEST_URI'])) {
+                $this->redirect(Yii::app()->request->getHostInfo('https'));
+            }
+            $this->redirect(Yii::app()->request->getHostInfo('https').$_SERVER['REQUEST_URI']);
+
+        } elseif ($par != 'process' && !empty($_SERVER['HTTPS'])) {
+            if (empty($_SERVER['REQUEST_URI'])) {
+                $this->redirect(Yii::app()->request->getHostInfo('http'));
+            }
+            $this->redirect(Yii::app()->request->getHostInfo('http').$_SERVER['REQUEST_URI']);
+        }
+
         //
         if( $par == 'ha' ){
             echo $this->widget('ext.webUser.socialAuth.SocialAuthWidget', array('pars'=>$this->pars))->html;
             Yii::app()->end();
-        } /**/       
+        } /**/
         //
         $langCode = !empty(Yii::app()->params['defaultFrontendLangCode'])? Yii::app()->params['defaultFrontendLangCode']: 'en';
 
-       
+
         //$Key = Yii::app()->session->sessionID.'__fr_lang';
         if($this->_theme=='dental')
             $langCode = 'sr';
-            
+
         if($this->_theme=='psd'){
             $langCode = Frontend::getCMSSetting('default_language','en');
-         
+
          //  print $langCode;
         /*    $cookie = new CHttpCookie('psd_lang',$langCode);
-		$cookie->expire = time()+60*60*24*30; 
-		print $langCode;
-		if(!isset(Yii::app()->request->cookies['psd_lang'])){
-			Yii::app()->request->cookies['psd_lang'] = $cookie;
-		}
-		 if($this->pars[1]!=''){
-               
-            	Yii::app()->session[$Key] = $this->pars[1];
-            	Yii::app()->request->cookies['psd_lang']->value = $this->pars[1];
+        $cookie->expire = time()+60*60*24*30;
+        print $langCode;
+        if(!isset(Yii::app()->request->cookies['psd_lang'])){
+            Yii::app()->request->cookies['psd_lang'] = $cookie;
+        }
+         if($this->pars[1]!=''){
+
+                Yii::app()->session[$Key] = $this->pars[1];
+                Yii::app()->request->cookies['psd_lang']->value = $this->pars[1];
             }
-            
+
             $lang = isset(Yii::app()->session[$Key])? Yii::app()->session[$Key] : $langCode;
            print $lang;
             if(empty($lang)){
@@ -115,53 +116,53 @@ class DefaultController extends CController
             $langCode = $lang;*/
          //  print $langCode;
         //   print_r(Yii::app()->session);
-   
-        	
-        		/*
-         
-        	if(!isset(Yii::app()->session['front_lang']))
-        		Yii::app()->session['front_lang'] = $langCode;
-        		
-        	if($this->pars[1]!=''){
-        		Yii::app()->session['front_lang'] = $this->pars[1];	
-        	}
-        	
-        	$langCode = Yii::app()->session['front_lang'];		*/
-        		
-        		 if(!isset(Yii::app()->session['front_lang']))
-        		Yii::app()->session['front_lang'] = $langCode;
-        		
-        	if($this->pars[1]!='' && in_array($this->pars[1],array('si','en'))){
-        		Yii::app()->session['front_lang'] = $this->pars[1];	
-        	}
-        	
-        	$ln = Yii::app()->session['front_lang'];		
-        	if(in_array($ln,array('si','en')))
-        	 $langCode = $ln;
+
+
+                /*
+
+            if(!isset(Yii::app()->session['front_lang']))
+                Yii::app()->session['front_lang'] = $langCode;
+
+            if($this->pars[1]!=''){
+                Yii::app()->session['front_lang'] = $this->pars[1];
+            }
+
+            $langCode = Yii::app()->session['front_lang'];      */
+
+                 if(!isset(Yii::app()->session['front_lang']))
+                Yii::app()->session['front_lang'] = $langCode;
+
+            if($this->pars[1]!='' && in_array($this->pars[1],array('si','en'))){
+                Yii::app()->session['front_lang'] = $this->pars[1];
+            }
+
+            $ln = Yii::app()->session['front_lang'];
+            if(in_array($ln,array('si','en')))
+             $langCode = $ln;
         }
         //print $langCode;
-        
+
         $this->pars['lang'] = $langCode;
         $this->pageID = Frontend::getPageID( $par, $langCode );
-        /*MyFunctions::echoArray( array( 
-            'pageID'=>$this->pageID, 
-            'par'=>$par, 
-            'lang'=>$langCode, 
+        /*MyFunctions::echoArray( array(
+            'pageID'=>$this->pageID,
+            'par'=>$par,
+            'lang'=>$langCode,
             'theme'=>$theme,
             'theme path'=>Yii::app()->theme->viewPath,
         ) );/**/
         //
         if($this->pars[0]=='')
             $this->pars[0] = Frontend::getPageData($this->pageID, 'url');
-        $err = null;        
+        $err = null;
         if( $this->pageID == 0){
-            // show no-page 
+            // show no-page
             $err = array('code'=>'701', 'message'=>'Requested URL cannot be resolved or Home page is not defined');
             //$this->render('error', $err);
         } else {
             $blocks = Frontend::prepareBlockArray( $this->pageID );
             $this->blocks = $blocks;
-            // MyFunctions::echoArray($blocks);
+            //MyFunctions::echoArray($blocks);
             // Check template file existence
             if( isset( $blocks['tpl_file'] ) ){
                 if( (Yii::app()->getTheme())!==null )
@@ -172,9 +173,9 @@ class DefaultController extends CController
             //echo $tplFile;
             if( !file_exists($tplFile) ) {
                 $err = array('code'=>'702', 'message'=>'Template file NOT exists!');
-               
+
             } else {
-            
+
                 //MyFunctions::echoArray($blocks);
                 $err = null;
                 $this->pageTitle = $blocks['title'];
@@ -185,9 +186,9 @@ class DefaultController extends CController
         }// if($this->pageID == 0)
         if ( $err != null ){
             $this->actionError($err);
-        }        
+        }
     }
-    
+
     /**
      * Function to prepare displaying information about error in user-friendly manner
      */

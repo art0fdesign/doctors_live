@@ -16,10 +16,12 @@
                         <img src="<?php echo $new->loadNewsImageHomePage(); ?>" width="50px" height="55px">
                     </a>
 
+                    <p>
                         <?php echo $new->getShortText($new->news_text, 75) ?><br />
                         <a href="<?php echo $detailsUrlN .'/'. MyFunctions::parseForSEO($new->news_name); ?>">
                             <?php echo $new->news_name; ?>
                         </a>
+                    </p>
                 </li>
                 <br />
             <?php endforeach ?>
@@ -36,14 +38,14 @@
                 <a href="<?php echo $detailsUrlP .'/'. MyFunctions::parseForSEO($post->blog_name); ?>">
                     <img src="<?php echo $post->loadBlogImageHomePage(); ?>" width="50px" height="55px">
                 </a>
-
-                    <?php echo strip_tags($post->getShortText($post->blog_content, 75)); ?><br />
+                <p>
+                    <?php echo $post->getShortText($post->blog_content, 75); ?><br />
                     <a href="<?php echo $detailsUrlP .'/'. MyFunctions::parseForSEO($post->blog_name); ?>">
                         <?php echo $post->blog_name; ?>
                     </a>
-            </li>
-            <br />
-            <?php endforeach ?>
+                </p>
+            </li><br />
+            <?php endforeach; ?>
         </ul>
     </div>
 
